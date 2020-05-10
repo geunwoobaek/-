@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:gravity="center"
+      android:textSize="30dp"
+      android:background="#f0f000"
+      android:shadowRadius="1.6"
+      android:text="서울 대기질 정보"/>
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:textSize="25dp"
+      android:layout_marginTop="20dp"
+      android:layout_marginLeft="20dp"
+    android:text="날짜 별 대기질 "/>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+    android:orientation="horizontal">
+
+    <EditText android:id="@+id/date"
+        android:layout_width="77dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:background="@drawable/edge"
+        android:hint="20xx년x월x일"></EditText>
+
+    <EditText android:id="@+id/localName"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:background="@drawable/edge"
+        android:hint="지역명"></EditText>
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp"
+        android:text="조회"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/Button1"
+        android:onClick="Click1"/>
+  </LinearLayout>
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:textSize="25dp"
+      android:layout_marginTop="260dp"
+      android:layout_marginLeft="20dp"
+      android:text="오늘의 미세먼지 "
+      />
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:orientation="horizontal">
+
+
+    <EditText android:id="@+id/today_local"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="5"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edge"
+        android:hint="지역명"></EditText>
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp"
+        android:text="조회"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/Button2"
+        android:onClick="Click2" />
+  </LinearLayout>
+</LinearLayout>
